@@ -1,0 +1,68 @@
+// This is where you can import other stylesheets or write your scss code
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./variables";
+@import "./mixin.scss";
+@import "./style";
+
+$primary: #0e749e;
+$secondary: #e0ddb2;
+$font: Helvetica, Arial, sans-serif;
+$size: 1.25rem;
+
+.container {
+  .card {
+    background-color: $secondary;
+    border-color: $card-border-color;
+    border-width: $card-border-width;
+  }
+}
+.cardimg nav {
+  @include media-breakpoint-up(lg) {
+    @include flexCenter();
+  }
+  display: flex;
+  justify-content: end;
+}
+ul {
+  @include flexCenter();
+}
+
+header {
+  background-image: $image;
+}
+.nav a {
+  color: #016690;
+}
+
+footer {
+  ul {
+    @include flexCenter();
+    list-style-type: none;
+    gap: 25px;
+    background-color: $primary;
+  }
+}
+footer {
+  li > a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.col {
+  @include media-breakpoint-up(md) {
+    width: 80%;
+  }
+  @include media-breakpoint-up(xl) {
+    justify-content: center;
+  }
+}
+aside.border {
+  border-color: $secondary !important;
+}
+// }
+// div {
+//   .two {
+//     border: red;
+//     border-color: red;
+//   }
+// }

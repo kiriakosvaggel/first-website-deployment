@@ -1,0 +1,23 @@
+$primary: #0e749e;
+$secondary: #e0ddb2;
+$font: Helvetica, Arial, sans-serif;
+$size: 1.25rem;
+$card-bg: $secondary;
+$card-border-color: #d7d06e;
+$card-border-width: 2px;
+$border-color: $secondary;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 500px,
+  xl: 1025px,
+  xxl: 1400px,
+);
+$image: url(../images/header.jpg);
+
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%,
+);
